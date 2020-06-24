@@ -1,0 +1,39 @@
+section {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-of-type(1) {
+    animation: color-change 2000ms ease-in infinite;
+}
+div:nth-of-type(2) {
+    animation: color-change 1000ms ease-in infinite;
+}
+div:nth-of-type(3) {
+    animation: color-change 500ms ease-in infinite;
+}
+div:nth-of-type(4) {
+    animation: color-change 250ms ease-in infinite;
+}
+div:nth-of-type(5) {
+    animation: color-change 125ms ease-in infinite;
+}
+
+@keyframes color-change {
+    0%, 100%{
+        background: white;
+        color: black;
+    }
+    50% {
+        background: black;
+        color: white;
+    }
+}
